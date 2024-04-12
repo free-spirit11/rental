@@ -59,7 +59,7 @@ const PropertyMap = ({ property }) => {
     };
 
     fetchCoords();
-  });
+  }, []);
 
   if (loading) return <Spinner loading={loading} />;
   if (geocodeError) {
